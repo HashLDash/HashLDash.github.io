@@ -130,16 +130,19 @@ p {
 
 .curso {
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
     border:black 3px solid;
     padding:5px;
 }
 
-.curso .content {
-    display:flex;
+.curso h3 {
+    margin:0px 0px 10px 0px;
+    padding:10px;
+    background-color:rgb(200,200,200);
+    color:black;
 }
 
-.curso h3 {
+.aula h3 {
     margin:0px 0px 10px 0px;
     padding:10px;
     background-color:rgb(200,200,200);
@@ -152,7 +155,19 @@ p {
     height:300px;
 }
 
+.aula img {
+    margin: auto;
+    width:400px;
+    height:300px;
+}
+
 .curso p {
+    margin:auto;
+    text-indent:0px;
+    padding:5px;
+}
+
+.aula p {
     margin:auto;
     text-indent:0px;
     padding:5px;
@@ -164,7 +179,18 @@ a:link {
     color:black;
 }
 
-@media only screen and (max-width: 590px) {
+.aula {
+    display:flex;
+    flex-direction:column;
+    border:black 3px solid;
+    padding:5px;
+}
+
+.aula .content {
+    display:flex;
+}
+
+@media only screen and (max-width: 626px) {
     .propLateralEsquerda{
         display:None;
     }
@@ -182,9 +208,18 @@ a:link {
     .curso {
         flex-direction:column;
     }
+
+    .curso img {
+        width:100%;
+        height:100%;
+    }
+
+    .content {
+        flex-direction:column;
+    }
 }
 
-@media only screen and (max-width: 750px) and (min-width: 591px) {
+@media only screen and (max-width: 976px) and (min-width: 627px) {
     .propLateralDireita{
         display:None;
     }
@@ -195,11 +230,18 @@ a:link {
         flex-grow:1;
     }
     
-    iframe {
-        height:300px;
-    }
-
     .curso {
         flex-direction:column;
+        width:100%;
     }
+
+    .curso img {
+        width:100%;
+        height:100%;
+    }
+
+    .content {
+        flex-direction:column;
+    }
+    
 }
