@@ -32,6 +32,10 @@ h2 {
     line-height:50px;
 }
 
+.menuItem a:link {
+    color:white;
+}
+
 .menuItem:hover {
     background: gray;
 }
