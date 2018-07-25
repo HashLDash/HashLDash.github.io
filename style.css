@@ -137,6 +137,13 @@ p {
     flex-direction:row;
     border:black 3px solid;
     padding:5px;
+    border-radius:10px;
+    background-color: rgb(150,150,150);
+    margin:5px;
+}
+
+.curso:hover {
+    background-color: rgb(100,100,100);
 }
 
 .curso h3 {
@@ -189,6 +196,13 @@ a:link {
     flex-direction:column;
     border:black 3px solid;
     padding:5px;
+    border-radius:10px;
+    background-color: rgb(150,150,150);
+    margin:5px;
+}
+
+.aula:hover {
+    background-color: rgb(100,100,100)
 }
 
 .aula .content {
