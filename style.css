@@ -267,6 +267,11 @@ a:link {
     .content {
         flex-direction:column;
     }
+
+    .aula img {
+        width:100%;
+        height:100%;
+    }
 }
 
 @media only screen and (max-width: 976px) and (min-width: 627px) {
@@ -286,6 +291,11 @@ a:link {
     }
 
     .curso img {
+        width:100%;
+        height:100%;
+    }
+
+    .aula img {
         width:100%;
         height:100%;
     }
