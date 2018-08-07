@@ -110,6 +110,7 @@ p {
     text-align:justify;
     max-width: 800px;
     text-indent:50px;
+    line-height:30px;
 }
 
 .fb-comments {
