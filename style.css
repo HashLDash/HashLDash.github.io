@@ -209,6 +209,36 @@ a:link {
     display:flex;
 }
 
+.aulaImg img{
+    max-width:100%;
+}
+
+.legend {
+    text-align:center;
+    text-indent:0px;
+    text-decoration:None;
+    color:black;
+}
+
+.highlight {
+    max-width: 800px;
+    text-align:left;
+    padding:5px;
+    background:rgba(200,200,250,1);
+    border:black 3px solid;
+    border-radius: 10px;
+    font-weight:bold;
+    overflow:auto;
+}
+
+.download {
+    text-align:center;
+    text-indent:0px;
+    text-decoration:None;
+    color:black;
+    font-size:17pt;
+}
+
 @media only screen and (max-width: 626px) {
     .propLateralEsquerda{
         display:None;
