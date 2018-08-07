@@ -272,6 +272,10 @@ a:link {
         width:100%;
         height:100%;
     }
+
+    .aulaImg img{
+        width:100%;
+    }
 }
 
 @media only screen and (max-width: 976px) and (min-width: 627px) {
@@ -291,6 +295,7 @@ a:link {
     }
 
     .curso img {
+        max-width:800px;
         width:100%;
         height:100%;
     }
@@ -298,6 +303,10 @@ a:link {
     .aula img {
         width:100%;
         height:100%;
+    }
+
+    .aulaImg img{
+        width:100%;
     }
 
     .content {
