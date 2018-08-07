@@ -4,11 +4,15 @@ html {
 }
 
 h1 {
-    font-size:3em;
+    font-size:2em;
 }
 
 h2 {
-    font-size:2.5em;
+    font-size:1.7em;
+}
+
+h3 {
+    font-size:1.5em;
 }
 
 .menu {
@@ -251,7 +255,7 @@ a:link {
 
     .main {
         margin:10px;
-        max-width:100%;
+        max-width:calc(100% - 10px);
         flex-grow:1;
     }
 
@@ -307,6 +311,7 @@ a:link {
 
     .aulaImg img{
         width:100%;
+        padding:10px;
     }
 
     .content {
