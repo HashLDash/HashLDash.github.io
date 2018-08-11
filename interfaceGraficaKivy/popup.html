@@ -58,17 +58,41 @@
     </div>
 
     <div class="main">
-        <h1> Kivy - Linguagem Kivy </h1>
-	<p> Nessa aula vamos aprender a linguagem Kivy para fazer os Layouts e a funcionalidade do nosso aplicativo! </p>
+        <h1> Kivy - Criando um Popup </h1>
+	<p> Nessa aula vamos aprender a criar um Popup no Kivy. Vamos implementar um Popup de confirmação de saída para o nosso aplicativo. </p>
 
 	<div class="aulaImg">
-	    <a href="https://www.youtube.com/watch?v=bO7eXZRag6I&index=31&list=PLsMpSZTgkF5C_Kkc0XBtM3OVLBsjUkjzy">
-	    <img src="../images/linguagemkivy.jpg">
+	    <a href="https://www.youtube.com/watch?v=w0BwoGl18Fk&index=46&list=PLsMpSZTgkF5C_Kkc0XBtM3OVLBsjUkjzy">
+	    <img src="../images/popup.png">
 	    <p class="legend">Clique na imagem para assistir a aula no YouTube.</p>
 	    </a>
 	</div>
 
-        <a href="https://github.com/HashLDash/Site/tree/master/resources/PythonNaPratica/31-kvlang"><p class="download">Faça o download dos arquivos desta aula aqui.</p>
+        <p>
+</p><p>Para criar um Popup no kivy, basta utilizarmos o Widget 'Popup', disponível na biblioteca padrão. Para importar, basta executar:
+</p><p>
+</p><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">kivy.uix.popup</span> <span class="kn">import</span> <span class="n">Popup</span>
+</pre></div>
+<p>
+</p><p>O Popup é basicamente composto de um título, passado pelo argumento 'title' e seu conteúdo, passado pelo argumento 'content'. O títle é uma string que será exibida no topo da janela do nosso Popup. Já o conteúdo, é um widget ou layout que será apresentado no corpo da janela.
+</p><p>
+</p><p>Para criar um Popup, basta executar:
+</p><p>
+</p><div class="highlight"><pre><span></span><span class="n">pop</span> <span class="o">=</span> <span class="n">Popup</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Título&quot;</span><span class="p">,</span><span class="n">content</span><span class="o">=</span><span class="n">layout</span><span class="p">)</span>
+</pre></div>
+<p>
+</p><p>Para que o Popup seja exibido, é preciso executar:
+</p><p>
+</p><div class="highlight"><pre><span></span><span class="n">pop</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+</pre></div>
+<p>
+</p><p>Para fechar o Popup:
+</p><p>
+</p><div class="highlight"><pre><span></span><span class="n">pop</span><span class="o">.</span><span class="n">dismiss</span><span class="p">()</span>
+</pre></div>
+<p>
+</p><p>No vídeo, mostro como implementar isso no nosso aplicativo, dê uma olhada :)
+</p><a href="https://github.com/HashLDash/Site/raw/master/resources/PythonNaPratica/46-Popup/Aula46.zip"><p class="download">Faça o download dos arquivos desta aula aqui.</p>
 
         <div class="fb-comments" data-href="https://hashldash.github.io/Site/" data-numposts="5"></div>
 
