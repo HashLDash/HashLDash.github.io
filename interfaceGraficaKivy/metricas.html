@@ -80,8 +80,8 @@
 </p><p>
 </p><p>É possível estabelecer diversos critérios, mas vou focar nos que acho mais úteis: proporcionalidade, size_hints e tamanho físico.
 </p><p>
-</p><p># Tamanhos proporcionais
-</p><p>
+</p><h2>Tamanhos proporcionais
+</h2><p>
 </p><p>Os tamanhos dos Widgets podem ser estabelecidos de forma proporcional ao tamanho da tela, para isso utilizamos a referência de um widget do tamanho da tela. Se você está utilizando o ScreenManager, uma boa referência é o 'root' da tela:
 </p><p>
 </p><div class="highlight"><pre><span></span><span class="c1"># arquivo.kv</span>
@@ -93,12 +93,12 @@
 <span class="n">width</span><span class="p">:</span><span class="n">root</span><span class="o">.</span><span class="n">width</span><span class="o">*</span><span class="mf">0.2</span> <span class="c1"># 20% da largura do root</span>
 </pre></div>
 <p>
-</p><p># Size_hints
-</p><p>
+</p><h2>Size_hints
+</h2><p>
 </p><p>Outra maneira de realizar um ajuste proporcional é utilizando o size_hint. A vantagem é que a constante de proporcionalidade vai levar em conta o número de widgets na tela.
 </p><p>
-</p><p># Tamanho físico
-</p><p>
+</p><h2>Tamanho físico
+</h2><p>
 </p><p>Outra maneira possível é utilizando as métricas do Kivy. As métricas disponíveis são: dp, sp, mm, cm, in e pt.
 </p><p>
 </p><p>A idéia das métricas é estabelecer unidades equivalentes entre as diferentes telas. Por exempo, se usarmos '5mm', o Kivy calculará quandos pixels são necessários para que o widget tenha 5mm de tamanho, independentemente da tela em que está rodando.
