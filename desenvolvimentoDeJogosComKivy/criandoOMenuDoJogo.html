@@ -76,7 +76,32 @@
 	</div>
 
         <p>
+</p><p>Para criar um menu, primeiro vamos ter que criar um gerenciador de telas para fazer a transição. Informações mais detalhadas de como criar um gerenciador podem ser vistas na aula <a href="https://hashldash.github.io/interfaceGraficaKivy/multiplasTelasScreenManager.html">Múltiplas telas com ScreenManager</a>.
 </p><p>
+</p><p>Aí vamos adicionar duas telas: uma para o menu e uma para o jogo em si. A tela de menu deve ser adicionada primeiro para o aplicativo começar na tela de menu.
+</p><p>
+</p><p>Depois vamos customizar o menu, criando uma imagem de fundo. Para adicionar essa imagem de fundo, vamos criar um retângulo e aplicar uma textura, que vamos extrair da imagem de fundo. Para isso, vamos usar o seguinte código kv:
+</p><p>
+</p><div class="highlight"><pre><span></span><span class="c1"># hashbird.kv</span>
+
+<span class="n">canvas</span><span class="p">:</span>
+
+    <span class="n">Color</span><span class="p">:</span>
+
+        <span class="n">rgba</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span>
+
+    <span class="n">Rectangle</span><span class="p">:</span>
+
+        <span class="n">size</span><span class="p">:</span><span class="bp">self</span><span class="o">.</span><span class="n">size</span>
+
+        <span class="n">pos</span><span class="p">:</span><span class="bp">self</span><span class="o">.</span><span class="n">pos</span>
+
+        <span class="n">source</span><span class="p">:</span><span class="s1">&#39;imagemDeFundo.png&#39;</span>
+</pre></div>
+<p>
+</p><p>Depois vamos adicionar dois botões embaixo, um escrito 'Start', para fazer a transição para a tela de jogo, e outro escrito 'Exit' para fechar o aplicativo. Podemos criar botões customizados utilizando as classes dinâmicas, que eu explico na aula de <a href="https://hashldash.github.io/interfaceGraficaKivy/classesDinamicasCustomizacao.html">Classes Dinâmicas e customização</a>.
+</p><p>
+</p><p>Para mais detalhes e dicas de como implementar esse menu, confira o vídeo!
 </p>
 
         <div class="fb-comments" data-href="https://hashldash.github.io/Site/" data-numposts="5"></div>
