@@ -3,13 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="lomadee-verification" content="22763391"/>
 <title>HashLDash</title>
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="../style.css" />
+<link rel="stylesheet" href="../pythonStyle.css" />
     
 </head>
 
 <body>
+
+<script type="text/javascript">
+    var wid = '383820';
+    var uid = '178239';
+</script>
+<script type="text/javascript" src="//cdn.popcash.net/pop.js"></script>
 
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -23,7 +31,7 @@
 <div class="banner">
         <div class="bannerImg">
             <center>
-                <img src="images/title.png">
+                <img src="../images/title.png">
             </center>
         </div>
 </div>
@@ -35,60 +43,128 @@
     </div>
 
 <div class="menu">
-    <a class="menuItem" href="index.html">Notícias</a>
-    <a class="menuItem" href="cursos.html">Cursos</a>
-    <a class="menuItem" href="contato.html">Contato</a>
-    <a class="menuItem" href="doacao.html">Doação</a>
+    <a class="menuItem" href="../index.html">Notícias</a>
+    <a class="menuItem" href="../cursos.html">Cursos</a>
+    <a class="menuItem" href="../contato.html">Contato</a>
+    <a class="menuItem" href="../doacao.html">Doação</a>
 </div>
 
 <center>
 <div class="thepage">
     
     <div class="propLateralEsquerda">
-        <script language="JavaScript1.1" src="https://t.dynad.net/script/?dc=5550002673;ord=1507010030082;idt_product=10;idt_url=325494;idt_label=84999;idt_category=24,46,47,19,18,25,20,78;click="></script>
-        <script language="JavaScript1.1" src="https://t.dynad.net/script/?dc=5550002673;ord=1507010345085;idt_product=9;idt_url=325494;idt_label=84999;idt_category=16;click="></script>
-        <script language="JavaScript1.1" src="https://t.dynad.net/script/?dc=5550002673;ord=1507010486507;idt_product=15;idt_url=325494;idt_label=84999;idt_category=53;click="></script>
+        <!-- LOMADEE - BEGIN -->
+        <script src="//ad.lomadee.com/banners/script.js?sourceId=35984696&dimension=5&height=600&width=160&method=1&advertisers=5632,6111,6053,5798,6143,6117,5860,5644,5766,6126,5576" type="text/javascript" language="javascript"></script>
+        <!-- LOMADEE - END -->
+        <!-- LOMADEE - BEGIN -->
+        <script src="//ad.lomadee.com/banners/script.js?sourceId=35984696&dimension=5&height=600&width=160&method=1&advertisers=5632,6111,6053,5798,6143,6117,5860,5644,5766,6126,5576" type="text/javascript" language="javascript"></script>
+        <!-- LOMADEE - END -->
+        <!-- LOMADEE - BEGIN -->
+        <script src="//ad.lomadee.com/banners/script.js?sourceId=35984696&dimension=5&height=600&width=160&method=1&advertisers=5632,6111,6053,5798,6143,6117,5860,5644,5766,6126,5576" type="text/javascript" language="javascript"></script>
+        <!-- LOMADEE - END -->
     </div>
 
     <div class="main">
-        <h1> Desenvolvimento de jogos com Kivy </h1>
-        <p> Este curso fala sobre o desenvolvimento de jogos utilizando o framework Kivy. Para acompanhar este curso é necessário um conhecimento básico de Python e Kivy, que pode ser adquirido assistindo os cursos: Curso básico de Python e Interface gráfica com Kivy. Vamos desenvolver um jogo 2D baseado no Flappy Bird como projeto. </p>
-        <p> Confira abaixo as aulas do curso e uma breve descrição do conteúdo abordado em cada aula.</p>
+        <h1> Implementando a física do jogo </h1>
+	<p> Nesse vídeo nós vamos aprimorar a tela de jogo, deixando o player com um tamanho definido e posicionado para o início do jogo. Vamos também implementar a física do jogo, adicionando o efeito da gravidade no jogador e fazendo com que ele pule ao clicar (ou tocar) na tela. </p>
 
-                <a href="desenvolvimentoDeJogosComKivy/comoCriarUmJogo.html">
-            <div class="aula">
-                <h3>Como criar um jogo</h3>
-                <div class="content">
-                    <img src="images/hashBirdIntro.png">
-                    <p> Nesse vídeo eu faço uma introdução sobre esta nova etapa do cuso de Python na prático, onde o enfoque é a criação de um jogo. Para desenvolver esse jogo, vamos utilizar a linguagem Python e a framework Kivy para a interface gráfica. Este vídeo trata da parte inicial que é a criação da tela e a inserção do player no jogo. </p>
-                </div>
-            </div>
-        </a>
+	<div class="aulaImg">
+	    <a href="https://www.youtube.com/watch?v=VwC6Yg0F6zI">
+	    <img src="../images/gamePhysics.png">
+	    <p class="legend">Clique na imagem para assistir a aula no YouTube.</p>
+	    </a>
+	</div>
+
+        <p>
+</p><p>Chegou o momento de suas vidas em que vocês vão utilizar os conhecimentos de Física!
+</p><p>
+</p><p>Antes disso, vamos arrumar a nossa tela de jogo. Vamos editar o arquivo hashbird.kv e adicionar um FloatLayout na tela Game, e adicionar o Player nesse Layout.
+</p><p>
+</p><p>Depois precisamos configurar o Player, para que ele tenha um tamanho e posicionamento adequados.
+</p><p>
+</p><div class="highlight"><pre><span></span><span class="c1">#hashbird.kv</span>
+
+<span class="o">&lt;</span><span class="n">Game</span><span class="o">&gt;</span><span class="p">:</span>
+
+    <span class="n">FloatLayout</span><span class="p">:</span>
+
+        <span class="n">Player</span><span class="p">:</span>
+
+            <span class="nb">id</span><span class="p">:</span><span class="n">player</span>
+
+            <span class="n">allow_stretch</span><span class="p">:</span><span class="bp">True</span>
+
+            <span class="n">size_hint</span><span class="p">:</span><span class="bp">None</span><span class="p">,</span><span class="bp">None</span>
+
+            <span class="n">size</span><span class="p">:</span><span class="err">!</span><span class="n">largura</span><span class="err">!</span><span class="p">,</span><span class="err">!</span><span class="n">altura</span><span class="err">!</span>
+
+            <span class="n">x</span><span class="p">:</span><span class="err">!</span><span class="n">posicaoX</span><span class="err">!</span>
+
+            <span class="n">y</span><span class="p">:</span><span class="err">!</span><span class="n">posicaoY</span><span class="err">!</span>
+</pre></div>
+<p>
+</p><p>Primeiro, colocamos o id player, para que possamos acessar esse Widget pelo Python. O 'allow_stretch' faz com que a imagem tome o tamanho do Widget, esticando a imagem se necessário. Depois colocamos o tamanho e posição que quisermos, indicados por !largura!,!altura!,!posicaoX! e !posicaoY!. Experimente alguns valores e coloque os que achar mais interessante para o seu jogo!
+</p><p>
+</p><p>Vamos agora para o arquivo main.py, onde vamos implementar a física do jogo.
+</p><p>
+</p><p>Este é um jogo muito simples, fisicamente falando, pois só teremos que implementar a gravidade e colisões. Nesta aula vamos começar colocando a gravidade.
+</p><p>
+</p><p>Vamos criar um método que vai ser responsável por atualizar a posição do Player, chamado update. E vamos agendar a execução dele com o Clock periodicamente. Esse agendamento deve ser feito quando entrarmos na tela de jogo.
+</p><p>
+</p><div class="highlight"><pre><span></span><span class="c1">#main.py</span>
+
+<span class="kn">from</span> <span class="nn">kivy.clock</span> <span class="kn">import</span> <span class="n">Clock</span>
 
 
-        <a href="desenvolvimentoDeJogosComKivy/criandoOMenuDoJogo.html">
-            <div class="aula">
-                <h3>Criando o menu do jogo</h3>
-                <div class="content">
-                    <img src="images/hashBirdMenu.png">
-                    <p> Nesse vídeo nós vamos criar telas para o nosso jogo, sendo uma tela de Menu e outra a tela do Jogo. Vamos construir uma tela de menu com uma imagem de fundo e botões customizados. Depois vamos criar a funcionalidade dos botões para sair do jogo e para iniciar o jogo. O botão de iniciar irá trocar a tela para a tela de jogo. </p>
-                </div>
-            </div>
-        </a>
 
+<span class="k">class</span> <span class="nc">Game</span><span class="p">(</span><span class="n">Screen</span><span class="p">):</span>
 
-        <a href="desenvolvimentoDeJogosComKivy/gamePhysics.html">
-            <div class="aula">
-                <h3>Implementando a física do jogo</h3>
-                <div class="content">
-                    <img src="images/gamePhysics.png">
-                    <p> Nesse vídeo nós vamos aprimorar a tela de jogo, deixando o player com um tamanho definido e posicionado para o início do jogo. Vamos também implementar a física do jogo, adicionando o efeito da gravidade no jogador e fazendo com que ele pule ao clicar (ou tocar) na tela. </p>
-                </div>
-            </div>
-        </a>
+    <span class="k">def</span> <span class="nf">on_enter</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+
+        <span class="n">Clock</span><span class="o">.</span><span class="n">schedule_interval</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">update</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">30</span><span class="p">)</span>
+</pre></div>
+<p>
+</p><p>Neste caso, agendamos a execução do self.update 30 vezes por segundo. Depois vamos adicionar uma propriedade 'speed' que vai ser a velocidade do Player.
+</p><p>
+</p><div class="highlight"><pre><span></span><span class="c1">#main.py</span>
+
+<span class="kn">from</span> <span class="nn">kivy.properties</span> <span class="kn">import</span> <span class="n">NumericProperty</span>
 
 
 
+<span class="k">class</span> <span class="nc">Player</span><span class="p">(</span><span class="n">Image</span><span class="p">):</span>
+
+    <span class="n">speed</span> <span class="o">=</span> <span class="n">NumericProperty</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+<p>
+</p><p>E, finalmente, a parte da Física. Lembra que a taxa de variação da velocidade no tempo é a aceleração? No nosso joguinho, o Player está sob ação da gravidade somente. Então a velocidade do Player só vai variar conforme a gravidade do jogo. Então, basta atualizarmos a velocidade do Player e calcularmos a posição dele.
+</p><p>
+</p><div class="highlight"><pre><span></span><span class="c1">#main.py</span>
+
+    <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">ids</span><span class="o">.</span><span class="n">player</span><span class="o">.</span><span class="n">speed</span> <span class="o">+=</span> <span class="o">-</span><span class="n">gravidade</span> <span class="o">*</span> <span class="mi">1</span><span class="o">/</span><span class="mi">30</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">ids</span><span class="o">.</span><span class="n">player</span><span class="o">.</span><span class="n">y</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">ids</span><span class="o">.</span><span class="n">player</span><span class="o">.</span><span class="n">speed</span> <span class="o">*</span> <span class="mi">1</span><span class="o">/</span><span class="mi">30</span>
+</pre></div>
+<p>
+</p><p>Lembre-se de atribuir um valor que ache adequado para a gravidade.
+</p><p>
+</p><p>Agora vamos fazer o Player pular. Para isso, só precisamos estabelecer uma velocidade para o Player quando tocarmos, ou clicarmos, na tela.
+</p><p>
+</p><div class="highlight"><pre><span></span><span class="c1">#main.py</span>
+
+    <span class="k">def</span> <span class="nf">on_touch_down</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">ids</span><span class="o">.</span><span class="n">player</span><span class="o">.</span><span class="n">speed</span> <span class="o">=</span> <span class="n">velocidade</span>
+</pre></div>
+<p>
+</p><p>Lembrando que você deve atribuir um valor para 'velocidade'.
+</p><p>
+</p><p>Pronto!! Agora é só sair pulando com a bolinha!
+</p><p>
+</p><p>Para mais dicas, veja o vídeo!
+</p>
 
         <div class="fb-comments" data-href="https://hashldash.github.io/Site/" data-numposts="5"></div>
 
