@@ -18,15 +18,16 @@ h3 {
 .menu {
     display: flex;
     flex-wrap: wrap;
-    background:#333;
+    background:#777;
     justify-content:center;
     max-width: 100%;
+    border-radius:10px 10px 0px 0px;
 }
 
 .menuItem {
     height:50px;
     min-width: 150px;
-    background: black;
+    background: #000;
     margin: 5px;
     color:white;
     font-weight:bold;
@@ -34,6 +35,7 @@ h3 {
     flex-grow:0;
     text-decoration:none;
     line-height:50px;
+    border-radius: 10px;
 }
 
 .menuItem a:link {
@@ -41,7 +43,11 @@ h3 {
 }
 
 .menuItem:hover {
-    background: gray;
+    background: #222;
+}
+
+.active {
+    background: #050;
 }
 
 .banner {
@@ -65,7 +71,8 @@ h3 {
     -moz-box-align: center;
     box-align: center;
     align-items: center;
-
+    height:50vw;
+    max-height:300px;
 }
 
 .bannerImg{
@@ -81,8 +88,9 @@ h3 {
 }
 
 .bannerImg img {
-    max-width:100%;
     max-height:280px;
+    max-width:100%;
+    position:relative;
 }
 
 .thepage {
@@ -99,11 +107,13 @@ h3 {
 
 .numbers {
     position:absolute;
-    height:300px;
+    height:50vw;
+    max-height:300px;
     top:0px;
     left:0px;
     background-color: #000;
-    color: #020;
+    color: #052005;
+    font-weight:bold;
     font-size: 14px;
     overflow: hidden;
     text-align:justify;
@@ -140,15 +150,14 @@ p {
 .curso {
     display:flex;
     flex-direction:row;
-    border:black 3px solid;
-    padding:5px;
+    padding:10px;
     border-radius:10px;
-    background-color: rgb(150,150,150);
+    background-color: rgb(200,200,200);
     margin:5px;
 }
 
 .curso:hover {
-    background-color: rgb(100,100,100);
+    background-color: rgb(170,170,170);
 }
 
 .curso h3 {
