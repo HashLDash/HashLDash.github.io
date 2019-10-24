@@ -197,7 +197,8 @@ p {
 .aula h3 {
     margin:0px 0px 10px 0px;
     padding:10px;
-    background-color:rgb(200,200,200);
+    background-color:rgb(220,220,220);
+    border-radius:1vw;
     color:black;
 }
 
@@ -235,15 +236,14 @@ a:link {
 .aula {
     display:flex;
     flex-direction:column;
-    border:black 3px solid;
-    padding:5px;
+    padding:10px;
     border-radius:10px;
-    background-color: rgb(150,150,150);
+    background-color: rgb(200,200,200);
     margin:5px;
 }
 
 .aula:hover {
-    background-color: rgb(100,100,100)
+    background-color: rgb(170,170,170);
 }
 
 .aula .content {
