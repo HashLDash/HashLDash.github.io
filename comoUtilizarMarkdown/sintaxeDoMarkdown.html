@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>HashLDash</title>
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="../style.css" />
+<link rel="stylesheet" href="../pythonStyle.css" />
     
 </head>
 
@@ -23,7 +24,7 @@
 <div class="banner">
         <div class="bannerImg">
             <center>
-                <img src="images/title.png">
+                <img src="../images/title.png">
             </center>
         </div>
 </div>
@@ -35,10 +36,10 @@
     </div>
 
 <div class="menu">
-    <a class="menuItem" href="index.html">Notícias</a>
-    <a class="menuItem active" href="cursos.html">Cursos</a>
-    <a class="menuItem" href="contato.html">Contato</a>
-    <a class="menuItem" href="doacao.html">Doação</a>
+    <a class="menuItem" href="../index.html">Notícias</a>
+    <a class="menuItem" href="../cursos.html">Cursos</a>
+    <a class="menuItem" href="../contato.html">Contato</a>
+    <a class="menuItem" href="../doacao.html">Doação</a>
 </div>
 
 <center>
@@ -89,45 +90,68 @@
     </div>
 
     <div class="main">
-        <h1> Cursos </h1>
-        <p>Por enquanto o único curso que estou fazendo é sobre Python. Tenho alguns vídeos sobre outros assuntos, como LaTeX, mas eles são de baixa qualidade :/. Caso queira conferir, acesse <a href="https://www.youtube.com/channel/UCjxrE6D_P9X_HnSW2mpw1BQ">aqui.</a></p>
+        <h1> Sintaxe do Markdown </h1>
+	<p> Nesta aula você vai aprender a criar textos formatados utilizando a linguagem Markdown e sua sintaxe. </p>
 
-                <h2> Curso básico de Python </h2>
-        <a href="pythonNaPratica.html">
-            <div class="curso">
-                <img src="images/cursoBasicoPython.png">
-                <p>Este curso é indicado para iniciantes na linguagem. O curso cobre desde os tópicos mais básicos até temas mais avançados como interfaces gráficas, aplicativos de celular e interfaces 3D. </p>
-            </div>
-        </a>
+	<div class="aulaImg">
+	    <a href="">
+	    <img src="../images/markdown.png">
+	    <p class="legend">Clique na imagem para assistir a aula no YouTube.</p>
+	    </a>
+	</div>
 
-
-        <h2> Interface gráfica com Kivy </h2>
-        <a href="interfaceGraficaKivy.html">
-            <div class="curso">
-                <img src="images/interfacegraficakivy.jpg">
-                <p>Esse curso aborda interfaces gráficas, aplicativos de celular e interfaces básicas em 3D. É recomendado que o aluno tenha um conhecimento básico de Python. Caso ainda não saiba nada sobre Python, assista ao curso básico de Python. </p>
-            </div>
-        </a>
-
-
-        <h2> Desenvolvimento de jogos com Kivy </h2>
-        <a href="desenvolvimentoDeJogosComKivy.html">
-            <div class="curso">
-                <img src="images/hashBirdIntro.png">
-                <p>Este curso fala sobre o desenvolvimento de jogos utilizando o framework Kivy. Para acompanhar este curso é necessário um conhecimento básico de Python e Kivy, que pode ser adquirido assistindo os cursos: Curso básico de Python e Interface gráfica com Kivy. Vamos desenvolver um jogo 2D baseado no Flappy Bird como projeto. </p>
-            </div>
-        </a>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- propLateral -->
+	<ins class="adsbygoogle"
+	     style="display:block"
+	     data-ad-client="ca-pub-7220446760691137"
+	     data-ad-slot="6308862097"
+	     data-ad-format="auto"
+	     data-full-width-responsive="true"></ins>
+	<script>
+	     (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
 
 
-        <h2> Como utilizar Markdown </h2>
-        <a href="comoUtilizarMarkdown.html">
-            <div class="curso">
-                <img src="images/markdown.png">
-                <p>Este é uma referência aos recursos do Markdown. Markdown é uma linguagem simples utilizada para formatar textos. Diversos sites e aplicativos (como o HashForum) utilizam esta linguagem para formatar posts, criar sites e etc. </p>
-            </div>
-        </a>
+        <p>Para criar um texto formatado em Markdown, utilize a seguinte sintaxe para criar cada elemento:
+</p><p>
+</p><h2>Criando títulos de seções
+</h2><p>
+</p><p>Para criar um título, basta colocar o símbolo '#' em frente ao texto do título, da seguinte maneira:
+</p><p>
+</p><div class="highlight"><pre><span></span><span class="c1"># Novo título</span>
+</pre></div>
+<p>
+</p><p>Para criar subtítulos, basta repetir o símbolo na quantidade do subtítulo desejada:
+</p><p>
+</p><div class="highlight"><pre><span></span><span class="c1">## Novo subtítulo</span>
 
 
+
+<span class="c1">### Novo sub subtítulo</span>
+</pre></div>
+<p>
+</p><h2>Criando um bloco de código
+</h2><p>
+</p><p>Para formatar um código, utilize a seguinte sintaxe:
+</p><p>
+</p><div class="highlight"><pre><span></span><span class="sb">``</span><span class="err">`</span><span class="n">nomeDaLinguagem</span>
+
+<span class="n">meu</span> <span class="n">código</span> <span class="n">revolucionário</span>
+
+<span class="sb">``</span><span class="err">`</span>
+</pre></div>
+<p>
+</p><p>Se você indicar o nome da linguagem do código, alguns formatadores irão colorir seu código conforme a linguagem (syntax highlighting). Exemplo, para um código em Python, utilize:
+</p><p>
+</p><div class="highlight"><pre><span></span><span class="sb">``</span><span class="err">`</span><span class="n">python</span>
+
+<span class="k">def</span> <span class="nf">test</span><span class="p">():</span>
+
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Python is awesome!&#39;</span><span class="p">)</span>
+
+<span class="sb">``</span><span class="err">`</span>
+</pre></div>
 
 
         <div class="fb-comments" data-href="https://hashldash.github.io/Site/" data-numposts="5"></div>
