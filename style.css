@@ -60,6 +60,23 @@ h3 {
     background: #008;
 }
 
+.googlePlay {
+    flex: 1;
+    height:100%;
+    width:auto;
+}
+
+#app {
+    display:flex;
+    flex-direction:row-reverse;
+    position:absolute;
+    top: 0.5vw;
+    right: 0.5vw;
+    height: 5vw;
+    max-height:8%;
+    min-height:4%;
+}
+
 .banner {
     display: -webkit-box;
     display: -moz-box;
