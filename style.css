@@ -252,6 +252,7 @@ a:link {
 
 .aulaImg img{
     max-width:800px;
+    width:90%;
 }
 
 .legend {
@@ -314,7 +315,8 @@ a:link {
     }
 
     .aulaImg img{
-        width:100%;
+        width:90%;
+        padding:10px;
     }
 }
 
@@ -346,7 +348,7 @@ a:link {
     }
 
     .aulaImg img{
-        width:100%;
+        width:90%;
         padding:10px;
     }
 
