@@ -295,6 +295,10 @@ a:link {
         max-width:calc(100% - 10px);
         flex-grow:1;
     }
+    
+    .numbers {
+        height: 150vw;
+    }
 
     .curso {
         flex-direction:column;
